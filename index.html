@@ -1,0 +1,1095 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+
+    <!-- https://fonts.google.com/specimen/Prata?preview.text=Prata&preview.text_type=custom -->
+
+
+    <meta name="theme-color" content="#712cf9">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+    <style>
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merriweather:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+ *,html{
+  font-family: 'Merriweather', serif !important;
+ }
+        .offerbar
+        {
+          background: #161414;
+          color:#fff;
+          /* font-family: 'Cinzel Decorative', cursive; */
+          
+          font-weight: 700;
+        
+        }
+
+        .navbar-toggler{
+          border-color: rgba(231, 231, 231, 0);
+    border-radius: 0px !important;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+} 
+
+
+.swiper {
+      width: 100%;
+     
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #ffffff9c;
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke:#b1b1b1be;
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+
+
+
+    .go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card1 {
+  margin-top: 5px !important  ;
+  text-decoration: none !important;
+  color: white !important;
+  display: block;
+  position: relative;
+  
+  background-color: #284347;
+  border-radius: 4px;
+  padding: 32px 24px;
+  /* margin: 12px; */
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #277581;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+
+.card1:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+}
+
+
+.card2 {
+  margin-top: 5px !important  ;
+  text-decoration: none !important;
+  color: white !important;
+  display: block;
+  position: relative;
+  
+  background-color: #117232;
+  border-radius: 4px;
+  padding: 32px 24px;
+  /* margin: 12px; */
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #188d14;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+
+.card2:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+}
+
+
+.card3 {
+  margin-top: 5px !important  ;
+  text-decoration: none !important;
+  color: white !important;
+  display: block;
+  position: relative;
+  
+  background-color: #b99b49;
+  border-radius: 4px;
+  padding: 32px 24px;
+  /* margin: 12px; */
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #796222;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(21);
+  }
+}
+
+.card3:hover {
+  p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+}
+
+.semitransparent {
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+}
+
+
+.preenter
+{
+    color: #d1d1d1 !important;
+    font-size: 1.2rem;
+}
+.enter
+{
+    text-decoration: none !important;
+    color: #d1d1d1 !important;
+    font-size: 1.2rem
+}
+a.enter::after {
+    content: "";
+    display: block;
+    width: 42px;
+    padding-top: 2px;
+    border-bottom: 3px solid #a200ff;
+  }
+   
+
+  
+    </style>
+
+
+
+
+</head>
+  <body>
+   
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+
+
+
+      
+
+        
+
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+
+
+   
+
+      </svg>
+    
+<header>
+   <div class="container-fluid offerbar  fixed-top">
+    <div class="row">
+      <div class="col-12  text-center pt-2 pb-2">
+        
+
+       Call our customer care +971 4 333788XX
+      </div>
+    </div>
+
+ 
+   </div>
+
+   <div class="container-fluid">
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+  
+  
+          <nav  class="navbar fixed-top" style="margin-top: 40px !important;" aria-label="Light offcanvas navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#">
+
+
+                <svg  id="logome" width="252" height="51" viewBox="0 0 252 51" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="252" height="51" fill="url(#pattern0)"/>
+                  <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_18_21" transform="scale(0.00396825 0.0196078)"/>
+                  </pattern>
+                  <image id="image0_18_21" width="252" height="51" xlink:href="data:image/png;base64,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"/>
+                  </defs>
+                  </svg>
+
+
+              </a>
+              
+              <div>  
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H14M4 18H9" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+              
+              </div>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">
+                    
+                 <img src="images/logo.png" style="width:70%">
+
+
+                    
+                        
+
+                      
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+  
+  
+        </div>
+      </div>
+
+   </div>
+
+
+   <div class="container-fluid">
+
+
+    <div class="row" style="background: black;">
+
+     
+
+        
+        <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide" style="background: url('images/2.png');background-size: cover;">
+      
+        <div class="container" style="background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,0.4374124649859944) 0%, rgba(9,9,121,0.2777485994397759) 44%, rgba(0,212,255,0) 100%);">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+
+             
+
+          </div>
+
+          
+
+          
+        </div>
+      
+      </div>
+
+
+      <div class="swiper-slide" style="background: url('images/7.png');background-size: cover;">
+      
+        <div class="container ">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+             
+
+          </div>
+          
+
+          
+        </div>
+      
+      </div>
+
+
+      <div class="swiper-slide" style="background: url('images/6.png');background-size: cover;">
+      
+        <div class="container ">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+           
+
+        </div>
+          
+
+          
+        </div>
+      
+      </div>
+
+
+
+      <div class="swiper-slide" style="background: url('images/5.png');background-size: cover;">
+      
+        <div class="container ">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+
+           
+
+        </div>
+
+          
+
+          
+        </div>
+      
+      </div>
+
+
+
+      <div class="swiper-slide" style="background: url('images/2.png');background-size: cover;">
+      
+        <div class="container ">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+
+             
+
+          </div>
+          
+
+          
+        </div>
+      
+      </div>
+
+
+      <div class="swiper-slide" style="background: url('images/4.png');background-size: cover;">
+      
+        <div class="container ">
+
+          <div class="row" style="padding-top: 240px !important;">
+
+            
+            <div class="container mt-5 mb-5">
+
+              <div class="row" >
+            
+                <div class="col-md-12 text-start text-white" >
+                  <h1 class="fw-bold " >World class Services on</h1>
+                  <h2>Engineers & Contractors - Leaders in turn-key MEP, powering  infrastructure across the UAE</h2>
+                 </div>
+              </div>
+              <div class="row" >
+            
+            
+                <div class="col-md-4">
+                      
+                  <a class="card1" href="#">
+                  <h3>Mechanical</h3>
+                  <p class="small">Heating, ventilation, and air conditioning (HVAC) systems, elevators and escalators  etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card2" href="#">
+                  <h3>Electrical</h3>
+                  <p class="small">Electrical wiring, lighting, power distribution etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+                <div class="col-md-4">
+                      
+                  <a class="card3" href="#">
+                  <h3>Plumbing</h3>
+                  <p class="small">Installation of water supply, drainage, sewage, and fire suppression systems etc.</p>
+                  <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                      →
+                    </div>
+                  </div>
+                </a>
+                </div>
+            
+            
+            
+            
+              </div>
+            
+                 
+              
+             </div>
+
+             
+
+          </div>
+
+          
+
+          
+        </div>
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+     
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+      
+
+
+
+
+
+
+
+    </div>
+
+ </div>
+
+
+
+
+
+ <div class="container mt-5  mb-5 ">
+
+
+  <div class="row" >
+
+
+    <div class="col-md-6 p-5 rounded-start" style="background: #032352;color: white;min-height: 600px;"   >
+
+
+      <h3 class="preenter">
+        Who 
+        
+        <a class="enter">we are
+        
+
+        </a>
+    </h3>
+
+      <h1>About Us</h1>
+      <p>Welcome to NEXUSLINK, your go-to source for superior mechanical, electrical, and plumbing services in the building industry. We're your trusted partner for excellence in engineering solutions. Explore our site to see how NEXUSLINK can elevate your projects.
+ 
+      </p>
+      <a>Read more</a>
+
+
+    </div>
+
+
+    <div class="col-md-6 rounded-end"  style="background: url('images/s1.png');background-size: cover;">
+
+      
+     
+    </div>
+
+
+
+  </div>
+
+     
+  
+ </div>
+
+
+ 
+
+
+
+
+
+
+  </header>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
+
+    // var swiper = new Swiper(".mySwiper", {
+    //   spaceBetween: 30,
+    //   centeredSlides: true,
+    //   effect: "cube",
+    //   grabCursor: true,
+    //   cubeEffect: {
+    //     shadow: true,
+    //     slideShadows: true,
+    //     shadowOffset: 20,
+    //     shadowScale: 0.94,
+    //   },
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false
+    //   },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true
+    //   },
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev"
+    //   },
+    //   on: {
+    //     autoplayTimeLeft(s, time, progress) {
+    //       progressCircle.style.setProperty("--progress", 1 - progress);
+    //       progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    //     }
+    //   },
+      
+    // });
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        autoplayTimeLeft(s, time, progress) {
+          progressCircle.style.setProperty("--progress", 1 - progress);
+          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        }
+      }
+    });
+  </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
