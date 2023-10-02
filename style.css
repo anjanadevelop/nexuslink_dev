@@ -354,6 +354,11 @@ a.enter3::after {
 {
     background: #333233;
     min-height: 400px;
+
+    background-image: url(images/gggyrate.svg) ;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
 }
 .clist
 {
