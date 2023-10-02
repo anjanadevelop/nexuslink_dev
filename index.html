@@ -1358,6 +1358,8 @@ Mechanical Systems -->
 
 
 
+    const scrollTop = document.getElementById('scrolltop')
+	
     const navbar = document.getElementById('mynav');
 window.onscroll = () => {
     if (window.scrollY > 300) {
@@ -1367,20 +1369,19 @@ window.onscroll = () => {
       console.log("sssfss");
         navbar.classList.remove('nav-colored');
     }
-};
 
-
-
-const scrollTop = document.getElementById('scrolltop')
-	window.onscroll = () => {
-		if (window.scrollY > 0) {
+    if (window.scrollY > 0) {
 			scrollTop.style.visibility = "visible";
 			scrollTop.style.opacity = 1;
 		} else {
 			scrollTop.style.visibility = "hidden";
 			scrollTop.style.opacity = 0;
 		}
-	};
+
+};
+
+
+
 
 
 
