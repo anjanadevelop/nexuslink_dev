@@ -413,7 +413,7 @@ a.enter3::after {
 }
 
 .colnew {
-    width: calc(25% - 2rem);
+    width: calc(33% - 2rem);
     margin: 1rem;
     cursor: pointer;
 }
@@ -580,4 +580,29 @@ a.enter3::after {
     padding: 5px !important;
 }
 
+}
+
+.bgsd
+{
+    background: #e7e7e7d7 !important;
+}
+
+.footer
+{
+    background: #001220 !important;
+    min-height: 300px !important;
+   
+}
+.social
+{
+    background: #031731 !important;
+   
+}
+
+.bgc
+{
+    background-image: url(images/bbburst.svg) ;
+    background-repeat: no-repeat;
+    background-position: right; 
+    position: relative;
 }
