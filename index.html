@@ -1283,6 +1283,12 @@ Mechanical Systems -->
 </div>
 
 
+
+<div id="scrolltop">
+  <a class="top-button" href="#top">&uarr;</a>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
  
       <!-- Swiper JS -->
@@ -1365,11 +1371,23 @@ window.onscroll = () => {
 
 
 
+const scrollTop = document.getElementById('scrolltop')
+	window.onscroll = () => {
+		if (window.scrollY > 0) {
+			scrollTop.style.visibility = "visible";
+			scrollTop.style.opacity = 1;
+		} else {
+			scrollTop.style.visibility = "hidden";
+			scrollTop.style.opacity = 0;
+		}
+	};
 
 
 
 
   </script>
+
+
 
   </body>
 </html>
