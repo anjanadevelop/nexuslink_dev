@@ -338,7 +338,7 @@ a.enter3::after {
   
  .nav-colored
  {
-   background: rgba(66, 66, 66, 0.541) !important;
+   background: rgba(8, 11, 29, 0.87) !important;
  }
 .nav-transparent
 {
@@ -639,4 +639,41 @@ line-height: 1.5;
 cursor: pointer;
 padding: 14px;
 color: #03a3ff;
+}
+
+.top-space
+{
+  margin-top: 40px !important;
+}
+
+.panellogo
+{
+  width:60%
+}
+
+.blackbg
+{
+  background: black;
+}
+
+.aboutus
+{background: #032352 url(images/ggglitch.svg) no-repeat; color: white;min-height: 400px;}
+
+.aboutusimg
+{
+  background: url('images/s1.png');background-size: cover;
+}
+
+
+.bgoffcanvas
+{
+  background: #ececec url(images/ttten.svg) repeat; ;
+}
+
+
+.bgoffcanvas .navbar-nav .nav-link.active, .navbar-nav .nav-link.show ,.nav-link
+{
+font-weight: bold;
+font-size: 1.3rem;
+margin-left: 15px;;
 }
