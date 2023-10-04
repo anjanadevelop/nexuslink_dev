@@ -361,6 +361,18 @@ a.enter3::after {
     background-position: center; 
     position: relative;
 }
+
+.sectionservices2
+{
+    background: #1a2f75;
+    min-height: 400px;
+
+    background-image: url(images/gggyrate.svg) ;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
 .clist
 {
     padding-left: 0px;
@@ -375,6 +387,28 @@ a.enter3::after {
     background: #00000000 !important;
     border-bottom: 1px solid #f5f3df00;
 }
+
+.clistitem a
+{
+    padding-left: 0px;
+    color: #fff;
+    background: #00000000 !important;
+    border-bottom: 1px solid #f5f3df00;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.clistitem a:hover
+{
+    padding-left: 0px;
+    color: #ffd900;
+    background: #00000000 !important;
+    border-bottom: 1px solid #f5f3df00;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .tyellow
 {
     color: #e8ffa9;
@@ -676,4 +710,9 @@ color: #03a3ff;
 font-weight: bold;
 font-size: 1.3rem;
 margin-left: 15px;;
+}
+
+.aboutusimg2
+{
+  background: url('images/I2.jpg');background-size: cover;
 }
