@@ -698,6 +698,42 @@ color: #03a3ff;
   background: url('images/s1.png');background-size: cover;
 }
 
+.aboutusimgelectrical
+{
+  background: url('images/el1.jpg');background-size: cover;
+}
+
+.aboutusimgemechanical
+{
+  background: url('images/s1.png');background-size: cover;
+}
+
+
+.aboutusimgeplumbing
+{
+  background: url('images/wat1.jpg');background-size: cover;
+}
+
+
+.aboutusimgehvac
+{
+  background: url('images/cool1.jpg');background-size: cover;
+}
+
+
+.aboutusimgechat
+{
+  background: url('images/chat.jpg');background-size: cover;
+}
+
+.aboutusimgesecurity
+{
+  background: url('images/ey1.jpg');background-size: cover;
+}
+.aboutusimgfire
+{
+  background: url('images/fire.jpg');background-size: cover;
+}
 
 .bgoffcanvas
 {
@@ -715,4 +751,10 @@ margin-left: 15px;;
 .aboutusimg2
 {
   background: url('images/I2.jpg');background-size: cover;
+}
+
+
+.thumb
+{
+  width:250px;float:left;margin-right:15px;border-radius:10px
 }
