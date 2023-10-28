@@ -541,6 +541,7 @@ a.enter3::after {
     z-index: 2;
 }
 
+
 .containernew .back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -675,10 +676,17 @@ padding: 14px;
 color: #03a3ff;
 }
 
+/* v2 comment */
 .top-space
 {
-  margin-top: 40px !important;
+  margin-top: 0px !important;
 }
+.offerbar
+{
+  display: none;
+  visibility: hidden;
+}
+/* v2 comment */
 
 .panellogo
 {
@@ -735,6 +743,14 @@ color: #03a3ff;
   background: url('images/fire.jpg');background-size: cover;
 }
 
+
+.aboutusimgsolar
+{
+  background: url('images/solar.jpg');background-size: cover;
+}
+
+
+
 .bgoffcanvas
 {
   background: #ececec url(images/ttten.svg) repeat; ;
@@ -764,4 +780,14 @@ margin-left: 15px;;
   font-size: 1.2rem;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+
+.seldesc
+{
+
+  z-index:2000 !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+
 }
